@@ -1,4 +1,4 @@
-# RAG Document Q&A
+# Offline-RAG-Document-QA
 
 A local, offline Retrieval-Augmented Generation system for asking questions
 about your own documents (PDF, TXT, Markdown, DOCX). No data leaves your
