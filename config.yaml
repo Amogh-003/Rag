@@ -1,0 +1,30 @@
+# config.yaml
+# Default tunable settings for the RAG Document Q&A system.
+# Any value here can be overridden by an environment variable named
+# RAG_<FIELD_NAME_UPPER> (see .env.example), which takes precedence.
+
+paths:
+  data_dir: data
+  chroma_dir: chroma_db
+  logs_dir: logs
+
+ollama:
+  ollama_host: http://localhost:11434
+  ollama_model: llama3
+  temperature: 0.2
+
+embeddings:
+  embedding_model: all-MiniLM-L6-v2
+
+chunking:
+  chunk_size: 800
+  chunk_overlap: 120
+
+retrieval:
+  top_k: 4
+
+chroma:
+  collection_name: documents
+
+logging:
+  log_level: INFO
